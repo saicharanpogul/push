@@ -4,6 +4,10 @@ import BookmarkIcon from './Bookmark.png';
 import BookmarkActiveIcon from './BookmarkActive.png';
 import MoreIcon from './More.png';
 import BackIcon from './Back.png';
+import ListIcon from './List.png';
+import ListActiveIcon from './ListActive.png';
+import GridIcon from './Grid.png';
+import GridActiveIcon from './GridActive.png';
 
 export {
   NFTsIcon,
@@ -12,4 +16,8 @@ export {
   BookmarkActiveIcon,
   MoreIcon,
   BackIcon,
+  ListIcon,
+  ListActiveIcon,
+  GridIcon,
+  GridActiveIcon,
 };
