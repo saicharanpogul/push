@@ -8,6 +8,8 @@ import ListIcon from './List.png';
 import ListActiveIcon from './ListActive.png';
 import GridIcon from './Grid.png';
 import GridActiveIcon from './GridActive.png';
+import BookmarkedIcon from './Bookmarked.png';
+import PlayIcon from './Play.png';
 
 export {
   NFTsIcon,
@@ -20,4 +22,6 @@ export {
   ListActiveIcon,
   GridIcon,
   GridActiveIcon,
+  BookmarkedIcon,
+  PlayIcon,
 };

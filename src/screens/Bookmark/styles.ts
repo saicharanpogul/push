@@ -7,4 +7,14 @@ export default ScaledSheet.create({
     flex: 1,
     backgroundColor: colors.background.dark,
   },
+  noBookmarks: {
+    color: colors.tertiary.main,
+    fontSize: '15@s',
+    fontWeight: '600',
+    marginTop: '4@s',
+    marginBottom: '4@s',
+  },
+  column: {
+    flexDirection: 'row',
+  },
 });

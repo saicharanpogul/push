@@ -1,3 +1,5 @@
+import {Platform} from 'react-native';
+
 export const truncateAddress = (address: string) => {
   return (
     address.slice(0, 4) +
@@ -9,3 +11,5 @@ export const truncateAddress = (address: string) => {
 export const wait = (timeout: number) => {
   return new Promise((resolve: any) => setTimeout(resolve, timeout));
 };
+
+export const isIOS = Platform.OS === 'ios';

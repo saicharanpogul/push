@@ -13,7 +13,7 @@ import {scale} from 'react-native-size-matters';
 
 import styles from './styles';
 import {Asset, Header, ListAsset} from '../../components';
-import {truncateAddress, wait} from '../../utils';
+import {wait} from '../../utils';
 import {getNFTs} from '../../apis';
 import colors from '../../theme/colors';
 import {
@@ -45,7 +45,6 @@ const NFTs = () => {
           }
         } catch (error) {
           console.log('Fetch Failed: ', error);
-          console.log('Fetch Failed: ', error.response);
         } finally {
           setLoading(false);
         }
@@ -158,7 +157,7 @@ const NFTs = () => {
                 data={{
                   name: item?.external_data?.name,
                   imageUri: item?.external_data?.image,
-                  owner: truncateAddress(item?.owner ? item?.owner : ''),
+                  owner: item?.owner,
                   videoUri: item?.external_data?.animation_url,
                   tokenId: item?.token_id,
                 }}
@@ -219,7 +218,7 @@ const NFTs = () => {
                 data={{
                   name: item?.external_data?.name,
                   imageUri: item?.external_data?.image,
-                  owner: truncateAddress(item?.owner ? item?.owner : ''),
+                  owner: item?.owner,
                   videoUri: item?.external_data?.animation_url,
                   tokenId: item?.token_id,
                 }}

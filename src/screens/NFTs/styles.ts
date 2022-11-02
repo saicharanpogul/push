@@ -18,14 +18,14 @@ export default ScaledSheet.create({
     marginBottom: '10@s',
   },
   title: {
-    color: colors.primary.main,
+    color: colors.tertiary.main,
     fontSize: '15@s',
     fontWeight: '600',
     marginTop: '4@s',
     marginBottom: '4@s',
   },
   subTitle: {
-    color: colors.primary.main,
+    color: colors.tertiary.light,
     fontSize: '12@s',
     fontWeight: '500',
     marginTop: '2@s',

@@ -49,7 +49,13 @@ const App = () => {
       <SafeAreaView style={styles.backgroundTopStyle} />
       <SafeAreaView style={styles.backgroundBottomStyle}>
         <StatusBar
-          barStyle={Platform.OS === 'ios' ? 'light-content' : 'dark-content'}
+          barStyle={
+            Platform.OS === 'ios'
+              ? 'light-content'
+              : isDarkMode
+              ? 'light-content'
+              : 'dark-content'
+          }
           backgroundColor={backgroundStyle.backgroundColor}
         />
         <StackScreens />
